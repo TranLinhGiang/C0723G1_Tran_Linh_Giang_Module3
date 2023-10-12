@@ -2,7 +2,7 @@
 use student_management;
 -- tạo bảng
 CREATE TABLE class (
-    id_class INT primary key auto_increment,
+    id_class INT PRIMARY KEY AUTO_INCREMENT,
     class_name VARCHAR(50)
 );
 CREATE TABLE teacher (
