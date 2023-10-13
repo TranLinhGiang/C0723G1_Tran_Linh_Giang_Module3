@@ -1,30 +1,30 @@
 
-use quanlydiemthi;
+use quan_ly_diem_thi;
 -- tạo bảng:
-CREATE TABLE HocSinh (
-    MaHS VARCHAR(20) PRIMARY KEY,
-    TenHS VARCHAR(50),
-    NgaySinh DATETIME,
-    Lop VARCHAR(20),
-    GT VARCHAR(20)
+CREAte tabLe hocSinh (
+    MaHS VARChar(20) priMary key,
+    TenHS VARChar(50),
+    NgaySinh DATEtime,
+    Lop VARChar(20),
+    GT VARChar(20)
 );
-CREATE TABLE MonHoc (
-    MaMH VARCHAR(20) PRIMARY KEY,
-    TenMH VARCHAR(50),
-    MaGV VARCHAR(20)
+CrEAte tabLe monHoc (
+    MaMH VARChar(20) priMary key,
+    TenMH VARChar(50),
+    MaGV VARChar(20)
 );
-CREATE TABLE BangDiem(
- MaHS VARCHAR(20),
- MaMH VARCHAR(20),
- DiemThi INT,
- NgayKT DATETIME,
- PRIMARY KEY (MaHS, MaMH),
- FOREIGN KEY (MaHS) REFERENCES HocSinh(MaHS),
- FOREIGN KEY (MaMH) REFERENCES MonHoc(MaMH)
+CrEAte tabLe bangDiem(
+ MaHS VARChar(20),
+ maMH VARChar(20),
+ diemThi INT,
+ ngayKT DATEtime,
+ prIMary key (maHs, MamH),
+ foREign key (maHs) REfErences hocSinh(MaHs),
+ foREign key (maMh) REfErences monHoc(MaMh)
 );
-CREATE TABLE GiaoVien(
- MaGV VARCHAR(20) PRIMARY KEY,
- TenGV VARCHAR(20),
- SDT VARCHAR(10)
+CrEAte tabLe giaoVien(
+ MaGV VARChar(20) priMary key,
+ tenGV VARChar(20),
+ sdT VARChar(10)
 );
-ALTER TABLE MonHoc ADD CONSTRAINT FK_MaGV FOREIGN KEY (MaGV) REFERENCES GiaoVien(MaGV);
+AlTEr tabLe monHoc ADD conStraint fk_MaGV FOREign key (maGv) REfErences giaoVien(MaGv);

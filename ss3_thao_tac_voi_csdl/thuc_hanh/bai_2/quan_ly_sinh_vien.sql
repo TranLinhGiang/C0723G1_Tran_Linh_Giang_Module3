@@ -1,25 +1,25 @@
 use quan_ly_sinh_vien;
-SELECT *
-FROM student;
+select *
+from student;
 
-SELECT *
-FROM student
-WHERE Status = true;
+select *
+from student
+where Status = true;
 
-SELECT *
-FROM subject
-WHERE Credit < 10;
+select *
+from `subject`
+where credit < 10;
 
-SELECT S.StudentId, S.StudentName, C.ClassName
-FROM Student S join Class C on S.ClassId = C.ClassID;
+select S.students_id, S.student_name, C.class_name
+from student S join class C on S.class_id = C.class_id;
 
-SELECT S.StudentId, S.StudentName, C.ClassName
-FROM Student S join Class C on S.ClassId = C.ClassID
-WHERE C.ClassName = 'A1';
+select S.students_id, S.student_name, C.class_name
+from Student S join Class C on S.ClassId = C.ClassID
+where C.ClassName = 'A1';
 
-SELECT S.StudentId, S.StudentName, Sub.SubName, M.Mark
-FROM Student S join Mark M on S.StudentId = M.StudentId join Subject Sub on M.SubId = Sub.SubId;
+select S.students_id, S.student_name, Sub.class_name, M.mark
+from student S join mark M on S.students_id = M.students_id join Subject sub on M.sub_id = Sub.sub_id;
 
-SELECT S.StudentId, S.StudentName, Sub.SubName, M.Mark
-FROM Student S join Mark M on S.StudentId = M.StudentId join Subject Sub on M.SubId = Sub.SubId
-WHERE Sub.SubName = 'CF';
+select S.students_id, S.student_name, Sub.sub_name, M.mark
+from student S join mark M on S.students_id = M.students_id join Subject sub on M.sub_id = sub.sub_id
+where Sub.sub_name = 'CF';
