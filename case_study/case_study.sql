@@ -14,10 +14,10 @@ VALUES
 -- tạo bảng trình độ;
 CREATE TABLE trinh_do (
     ma_trinh_do INT primary key,
-    ten_vi_tri VARCHAR(45)
+    ten_trinh_do VARCHAR(45) 
 );
 -- thêm mới trình độ;
-INSERT INTO  trinh_do(ma_trinh_do,ten_vi_tri)
+INSERT INTO  trinh_do(ma_trinh_do,ten_trinh_do)
 VALUES
 (1,'Trung Cấp'),
 (2,'Cao Đẳng'),
@@ -81,29 +81,30 @@ VALUES
 -- tạo bảng khách hàng;
 CREATE TABLE khach_hang (
     ma_khach_hang INT PRIMARY KEY,
-    ma_loai_khach INT,
     ho_ten VARCHAR(45),
     ngay_sinh DATE,
     gioi_tinh BIT(1),
     so_cmnd VARCHAR(45),
-    so_dien_thoai varchar(45),
-    email varchar(45),
+    so_dien_thoai VARCHAR(45),
+    email VARCHAR(45),
     dia_chi VARCHAR(45),
-    foreign key(ma_loai_khach)references loai_khach(ma_loai_khach)
+    ma_loai_khach INT,
+    FOREIGN KEY (ma_loai_khach)
+        REFERENCES loai_khach (ma_loai_khach)
 );
 -- thêm mới khách hàng;
-INSERT INTO khach_hang(ma_khach_hang,ho_ten,ngay_sinh,gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi)
+INSERT INTO khach_hang(ma_khach_hang,ho_ten,ngay_sinh,gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi, ma_loai_khach)
 VALUES
-(1, 'Nguyễn Thị Hào', '1970-11-07', 0, '643431213', '0945423362', 'thihao07@gmail.com', '23 Nguyễn Hoàng, Đà Nẵng'),
-(2, 'Phạm Xuân Diệu', '1992-08-08', 1, '865342123', '0954333333', 'xuandieu92@gmail.com', 'K77/22 Thái Phiên, Quảng Trị'),
-(3, 'Trương Đình Nghệ', '1990-02-27', 1, '488645199', '0373213122', 'nghenhan2702@gmail.com', 'K323/12 Ông Ích Khiêm, Vinh'),
-(4, 'Dương Văn Quan', '1981-07-08', 1, '543432111', '0490039241', 'duongquan@gmail.com', 'K453/12 Lê Lợi, Đà Nẵng'),
-(5, 'Hoàng Trần Nhi Nhi', '1995-12-09', 0, '795453345', '0312345678', 'nhinhi123@gmail.com', '224 Lý Thái Tổ, Gia Lai'),
-(6, 'Tôn Nữ Mộc Châu', '2005-12-06', 0, '732434215', '0988888844', 'tonnuchau@gmail.com', '37 Yên Thế, Đà Nẵng'),
-(7, 'Nguyễn Mỹ Kim', '1984-04-08', 0, '856453123', '0912345698', 'kimcuong84@gmail.com', 'K123/45 Lê Lợi, Hồ Chí Minh'),
-(8, 'Nguyễn Thị Hào', '1999-04-08', 0, '965656433', '0763212345', 'haohao99@gmail.com', '55 Nguyễn Văn Linh, Kon Tum'),
-(9, 'Trần Đại Danh', '1994-07-01', 1, '432341235', '0643343433', 'danhhai99@gmail.com', '24 Lý Thường Kiệt, Quảng Ngãi'),
-(10, 'Nguyễn Tâm Đắc', '1989-07-01', 1, '344343432', '0987654321', 'dactam@gmail.com', '22 Ngô Quyền, Đà Nẵng');
+(1, 'Nguyễn Thị Hào', '1970-11-07', 0, '643431213', '0945423362', 'thihao07@gmail.com', '23 Nguyễn Hoàng, Đà Nẵng',5),
+(2, 'Phạm Xuân Diệu', '1992-08-08', 1, '865342123', '0954333333', 'xuandieu92@gmail.com', 'K77/22 Thái Phiên, Quảng Trị',3),
+(3, 'Trương Đình Nghệ', '1990-02-27', 1, '488645199', '0373213122', 'nghenhan2702@gmail.com', 'K323/12 Ông Ích Khiêm, Vinh',1),
+(4, 'Dương Văn Quan', '1981-07-08', 1, '543432111', '0490039241', 'duongquan@gmail.com', 'K453/12 Lê Lợi, Đà Nẵng',1),
+(5, 'Hoàng Trần Nhi Nhi', '1995-12-09', 0, '795453345', '0312345678', 'nhinhi123@gmail.com', '224 Lý Thái Tổ, Gia Lai',4),
+(6, 'Tôn Nữ Mộc Châu', '2005-12-06', 0, '732434215', '0988888844', 'tonnuchau@gmail.com', '37 Yên Thế, Đà Nẵng',4),
+(7, 'Nguyễn Mỹ Kim', '1984-04-08', 0, '856453123', '0912345698', 'kimcuong84@gmail.com', 'K123/45 Lê Lợi, Hồ Chí Minh',1),
+(8, 'Nguyễn Thị Hào', '1999-04-08', 0, '965656433', '0763212345', 'haohao99@gmail.com', '55 Nguyễn Văn Linh, Kon Tum',3),
+(9, 'Trần Đại Danh', '1994-07-01', 1, '432341235', '0643343433', 'danhhai99@gmail.com', '24 Lý Thường Kiệt, Quảng Ngãi',1),
+(10, 'Nguyễn Tâm Đắc', '1989-07-01', 1, '344343432', '0987654321', 'dactam@gmail.com', '22 Ngô Quyền, Đà Nẵng',2);
 -- tạo bảng loại dịch vụ;
 CREATE TABLE loai_dich_vu (
     ma_loai_dich_vu INT PRIMARY KEY not null,
@@ -175,28 +176,9 @@ VALUES
 (4,'Buffet buổi sáng', 15000, 'suất', 'đầy đủ đồ ăn, tráng miệng'),
 (5,'Buffet buổi trưa', 90000, 'suất', 'đầy đủ đồ ăn, tráng miệng'),
 (6,'Buffet buổi tối', 16000, 'suất', 'đầy đủ đồ ăn, tráng miệng');
--- tạo bảng hợp đồng chi tiết;
-CREATE TABLE hop_dong_chi_tiet (
-    ma_hop_dong_chi_tiet INT,
-    ma_hop_dong INT primary key NOT NULL,
-    ma_dich_vu_di_kem INT,
-    so_luong INT,
-    foreign key(ma_dich_vu_di_kem) references dich_vu_di_kem (ma_dich_vu_di_kem)
-);
--- thêm mới hợp đồng chi tiết; uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
-insert into hop_dong_chi_tiet (ma_hop_dong_chi_tiet,so_luong, ma_hop_dong, ma_dich_vu_di_kem)
-values
-(1,5, 2, 4),
-(2,8, 2, 5),
-(3,15, 2, 6),
-(4,1, 3, 1),
-(5,11, 3, 2),
-(6,1, 1, 3),
-(7,2, 1, 2),
-(8,2, 12, 2);
 -- tạo bảng hợp đồng;
 CREATE TABLE hop_dong (
-    ma_hop_dong int,
+    ma_hop_dong int primary key,
     ngay_lam_hop_dong DATETIME,
     ngay_ket_thuc DATETIME,
     tien_dat_coc DOUBLE,
@@ -205,12 +187,11 @@ CREATE TABLE hop_dong (
     ma_dich_vu INT,
    foreign key ( ma_nhan_vien) references nhan_vien (ma_nhan_vien),
    foreign key ( ma_khach_hang) references khach_hang (ma_khach_hang),
-   foreign key ( ma_hop_dong) references hop_dong_chi_tiet (ma_hop_dong),
    foreign key ( ma_dich_vu) references dich_vu (ma_dich_vu)
 );
--- thêm mới hợp đồng;uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
-INSERT INTO hop_dong (ma_hop_dong,ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu)
-VALUES
+-- thêm mới hợp đồng;
+insert into hop_dong(ma_hop_dong,ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu)
+values
 (1,'2020-12-08', '2020-12-08', 0, 3, 1, 3),
 (2,'2020-07-14', '2020-07-21', 200000, 7, 3, 1),
 (3,'2021-03-15', '2021-03-17', 50000, 3, 4, 2),
@@ -223,6 +204,29 @@ VALUES
 (10,'2021-04-12', '2021-04-14', 0, 10, 3, 5),
 (11,'2021-04-25', '2021-04-25', 0, 2, 2, 1),
 (12,'2021-05-25', '2021-05-27', 0, 7, 10, 1);
+-- tạo bảng hợp đồng chi tiết;
+CREATE TABLE hop_dong_chi_tiet (
+    ma_hop_dong_chi_tiet INT primary key,
+    so_luong INT,
+    ma_hop_dong INT ,
+    ma_dich_vu_di_kem INT,
+    foreign key(ma_dich_vu_di_kem) references dich_vu_di_kem (ma_dich_vu_di_kem),
+    foreign key(ma_hop_dong) references hop_dong (ma_hop_dong)
+    
+);
+-- thêm mới hợp đồng chi tiết;
+insert into hop_dong_chi_tiet(ma_hop_dong_chi_tiet,so_luong,ma_hop_dong,ma_dich_vu_di_kem)
+values
+(1,5, 2, 4),
+(2,8, 2, 5),
+(3,15, 2, 6),
+(4,1, 3, 1),
+(5,11, 3, 2),
+(6,1, 1, 3),
+(7,2, 1, 2),
+(8,2, 12, 2);
+
+
 
 
 
