@@ -1,21 +1,10 @@
-drop database if exists case_study;
-create database if not exists case_study;
 use case_study;
--- tạo bảng vị trí;
-CREATE TABLE vi_tri (
-    ma_vi_tri INT primary key,
-    ten_vi_tri VARCHAR(45)
-);
+-- thêm mới;
 -- thêm mới vị trí;
 INSERT INTO vi_tri (ma_vi_tri,ten_vi_tri)
 VALUES
 (1,'Quản Lý'),
 (2,'Nhân Viên');
--- tạo bảng trình độ;
-CREATE TABLE trinh_do (
-    ma_trinh_do INT primary key,
-    ten_trinh_do VARCHAR(45) 
-);
 -- thêm mới trình độ;
 INSERT INTO  trinh_do(ma_trinh_do,ten_trinh_do)
 VALUES
@@ -23,11 +12,7 @@ VALUES
 (2,'Cao Đẳng'),
 (3,'Đại Học'),
 (4,'Sau đại học');
--- tạo bảng bộ phận;
-CREATE TABLE bo_phan (
-    ma_bo_phan INT primary key,
-    ten_bo_phan VARCHAR(45)
-);
+
 -- thêm mới bộ phân;
 INSERT INTO bo_phan( ma_bo_phan,ten_bo_phan)
 VALUES
@@ -35,23 +20,7 @@ VALUES
 (2,'Hành chính'),
 (3,'Phục vụ'),
 (4,'Quản lý');
--- tạo bảng nhân viên;
-CREATE TABLE nhan_vien (
-    ma_nhan_vien INT primary key not null,
-    ho_ten VARCHAR(45),
-    ngay_sinh DATE,
-    so_cmnd VARCHAR(45),
-    luong DOUBLE,
-    so_dien_thoai VARCHAR(45),
-    email VARCHAR(45),
-    dia_chi VARCHAR(45),
-    ma_vi_tri INT not null,
-    ma_trinh_do INT not null,
-    ma_bo_phan INT,
-    foreign key(ma_vi_tri)references vi_tri (ma_vi_tri),
-    foreign key(ma_trinh_do)references trinh_do (ma_trinh_do),
-    foreign key(ma_bo_phan)references bo_phan (ma_bo_phan)
-);
+
 -- thêm mới nhân viên;
 INSERT INTO nhan_vien(ma_nhan_vien,ho_ten,ngay_sinh,so_cmnd,luong,so_dien_thoai,email,dia_chi,ma_vi_tri,ma_trinh_do,ma_bo_phan)
 VALUES
@@ -66,20 +35,6 @@ VALUES
 (9, 'Tòng Hoang', '1982-09-03', '256781231', 6000000, '0245144444', 'hoangtong@gmail.com', '213 Hàm Nghi, Đà Nẵng', 2, 4, 4),
 (10, 'Nguyễn Công Đạo', '1994-01-08', '755434343', 8000000, '0988767111', 'nguyencongdao12@gmail.com', '6 Hoà Khánh, Đồng Nai', 2, 3, 2);
 
--- hiển thị thông tin tất cả nhân viên có trong hệ thống có tên bắt đầu là một trong các ký tự H,T hoặc K và có tối đa 15 ký tự;
-SELECT
-  *
-FROM
-  nhan_vien
-WHERE
-  ho_ten LIKE 'H%' OR ho_ten LIKE 'T%' OR ho_ten LIKE 'K%'
-  AND length(ho_ten) <= 15;
-
--- tạo bảng loại khách;
-CREATE TABLE loai_khach (
-    ma_loai_khach INT PRIMARY KEY,
-    ten_loai_khach_hang VARCHAR(45)
-);
 -- thêm mới loại khách;
 INSERT INTO loai_khach(ma_loai_khach,ten_loai_khach_hang)
 VALUES
@@ -89,21 +44,6 @@ VALUES
 (4,'Silver'),
 (5,'Member');
 
-
--- tạo bảng khách hàng;
-CREATE TABLE khach_hang (
-    ma_khach_hang INT PRIMARY KEY,
-    ho_ten VARCHAR(45),
-    ngay_sinh DATE,
-    gioi_tinh BIT(1),
-    so_cmnd VARCHAR(45),
-    so_dien_thoai VARCHAR(45),
-    email VARCHAR(45),
-    dia_chi VARCHAR(45),
-    ma_loai_khach INT,
-    FOREIGN KEY (ma_loai_khach)
-        REFERENCES loai_khach (ma_loai_khach)
-);
 -- thêm mới khách hàng;
 INSERT INTO khach_hang(ma_khach_hang,ho_ten,ngay_sinh,gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi, ma_loai_khach)
 VALUES
@@ -117,54 +57,14 @@ VALUES
 (8, 'Nguyễn Thị Hào', '1999-04-08', 0, '965656433', '0763212345', 'haohao99@gmail.com', '55 Nguyễn Văn Linh, Kon Tum',3),
 (9, 'Trần Đại Danh', '1994-07-01', 1, '432341235', '0643343433', 'danhhai99@gmail.com', '24 Lý Thường Kiệt, Quảng Ngãi',1),
 (10, 'Nguyễn Tâm Đắc', '1989-07-01', 1, '344343432', '0987654321', 'dactam@gmail.com', '22 Ngô Quyền, Đà Nẵng',2);
--- hiển thị thông tin của tất cả khách hàng có độ tuổi từ 18-50 tuổi và có địa chỉ ở đà nẵng hoặc quảng trị;
-SELECT
-  *
-FROM
-  khach_hang
-WHERE
-  dia_chi LIKE '%Đà Nẵng%'
-  or dia_chi LIKE '%Quảng Trị';
-  
-  SELECT
-  *
-FROM
-  khach_hang
-WHERE
-  DATE_DIFF(DATE(), STR_TO_DATE(ngay_sinh, '%Y-%m-%d'), DAY) BETWEEN 365 * 18 AND 365 * 50;
-  
-  -- đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần. kết quả hiển thị được sắp xếp tăng dần theo số lần đặt phòng bao nhiêu lần 
-  -- Kết quả hiển thị được tăng dần theo số lần đặt phòng của khách hàng. chỉ đếm những khách nào có tên loại khách hàng là diamond;
 
-SELECT 
-    k.ho_ten, COUNT(h.ma_khach_hang) AS so_lan_dat_phong
-FROM
-    khach_hang k
-        LEFT JOIN
-    hop_dong h ON k.ma_khach_hang = h.ma_khach_hang
-WHERE
-    k.ma_loai_khach = 1
-GROUP BY k.ho_ten
-ORDER BY so_lan_dat_phong ASC;
--- hiển thị mã khách hàng , họ tên, tên loại khách, mã hợp đồng, tên dịch vụ, ngày làm hợp đồng, ngày kết thúc, tổng tiền;
--- công thức tinsg tổng số tiền: chi phí thuê + số lượng * giá 
-
--- tạo bảng loại dịch vụ;
-CREATE TABLE loai_dich_vu (
-    ma_loai_dich_vu INT PRIMARY KEY not null,
-    ten_loai_dich_vu VARCHAR(45)
-);
 -- thêm mới loại dịch vụ;
 INSERT INTO loai_dich_vu(ma_loai_dich_vu,ten_loai_dich_vu)
 VALUES
 (1,'Villa'),
 (2,'House'),
 (3,'Room');
--- tạo bảng kiểu thuê;
-CREATE TABLE kieu_thue (
-    ma_kieu_thue INT PRIMARY KEY,
-    ten_kieu_thue VARCHAR(45)
-);
+
 -- thêm mới kiểu thuê;
 INSERT INTO kieu_thue(ma_kieu_thue,ten_kieu_thue)
 VALUES
@@ -172,23 +72,7 @@ VALUES
 (2,'month'),
 (3,'day'),
 (4,'hour');
--- tạo bảng dịch vụ;
-CREATE TABLE dich_vu (
-    ma_dich_vu INT PRIMARY KEY,
-    ten_dich_vu VARCHAR(45),
-    dien_tich INT,
-    chi_phi_thue DOUBLE,
-    so_nguoi_toi_da INT,
-    ma_kieu_thue INT,
-    ma_loai_dich_vu INT,
-    tieu_chuan_phong VARCHAR(45),
-    mo_ta_tien_nghi_khac VARCHAR(45),
-    dien_tich_ho_boi DOUBLE,
-    so_tang INT,
-    dich_vu_mien_phi_di_kem TEXT,
-    foreign key(ma_loai_dich_vu)references loai_dich_vu(ma_loai_dich_vu),
-    foreign key(ma_kieu_thue)references kieu_thue (ma_kieu_thue)
-);
+
 -- thêm mới dịch vụ;
 INSERT INTO dich_vu(ma_dich_vu,
 ten_dich_vu,dien_tich,
@@ -203,14 +87,7 @@ VALUES
 (4,'Villa No Beach Front', 22000, 9000000, 8, 3, 1, 'normal', 'Có hồ bơi', 300, 3, null),
 (5,'House Princess 02', 10000, 4000000, 5, 3, 2, 'normal', 'Có thêm bếp nướng', null, 2, null),
 (6,'Room Twin 02', 3000, 900000, 2, 4, 3, 'normal', 'Có tivi', null, null, '1 Xe máy');
--- tạo bảng dịch vụ đi kèm;
-CREATE TABLE dich_vu_di_kem (
-    ma_dich_vu_di_kem INT PRIMARY KEY NOT NULL,
-    ten_dich_vu_di_kem VARCHAR(45),
-    gia DOUBLE,
-    don_vi VARCHAR(45),
-    trang_thai VARCHAR(45)
-);
+
 -- thêm mới dịch vụ đi kèm;
 INSERT INTO dich_vu_di_kem(ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai)
 VALUES
@@ -220,19 +97,6 @@ VALUES
 (4,'Buffet buổi sáng', 15000, 'suất', 'đầy đủ đồ ăn, tráng miệng'),
 (5,'Buffet buổi trưa', 90000, 'suất', 'đầy đủ đồ ăn, tráng miệng'),
 (6,'Buffet buổi tối', 16000, 'suất', 'đầy đủ đồ ăn, tráng miệng');
--- tạo bảng hợp đồng;
-CREATE TABLE hop_dong (
-    ma_hop_dong int primary key,
-    ngay_lam_hop_dong DATETIME,
-    ngay_ket_thuc DATETIME,
-    tien_dat_coc DOUBLE,
-    ma_nhan_vien INT,
-    ma_khach_hang int,
-    ma_dich_vu INT,
-   foreign key ( ma_nhan_vien) references nhan_vien (ma_nhan_vien),
-   foreign key ( ma_khach_hang) references khach_hang (ma_khach_hang),
-   foreign key ( ma_dich_vu) references dich_vu (ma_dich_vu)
-);
 
 -- thêm mới hợp đồng;
 insert into hop_dong(ma_hop_dong,ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu)
@@ -249,16 +113,7 @@ values
 (10,'2021-04-12', '2021-04-14', 0, 10, 3, 5),
 (11,'2021-04-25', '2021-04-25', 0, 2, 2, 1),
 (12,'2021-05-25', '2021-05-27', 0, 7, 10, 1);
--- tạo bảng hợp đồng chi tiết;
-CREATE TABLE hop_dong_chi_tiet (
-    ma_hop_dong_chi_tiet INT primary key,
-    so_luong INT,
-    ma_hop_dong INT ,
-    ma_dich_vu_di_kem INT,
-    foreign key(ma_dich_vu_di_kem) references dich_vu_di_kem (ma_dich_vu_di_kem),
-    foreign key(ma_hop_dong) references hop_dong (ma_hop_dong)
-    
-);
+
 -- thêm mới hợp đồng chi tiết;
 insert into hop_dong_chi_tiet(ma_hop_dong_chi_tiet,so_luong,ma_hop_dong,ma_dich_vu_di_kem)
 values
@@ -270,12 +125,3 @@ values
 (6,1, 1, 3),
 (7,2, 1, 2),
 (8,2, 12, 2);
-
-
-
-
-
-
-
-
-
