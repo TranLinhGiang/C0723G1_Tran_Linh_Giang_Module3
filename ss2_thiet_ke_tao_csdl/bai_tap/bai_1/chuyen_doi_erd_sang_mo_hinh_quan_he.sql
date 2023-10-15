@@ -6,6 +6,7 @@ CREATE TABLE nha_cung_cap (
     ten_nha_cung_cap VARCHAR(50),
     dia_chi VARCHAR(50)
 );
+
 -- tạo bảng đơn đặt hàng;
 CREATE TABLE don_dat_hang (
     so_don_hang INT PRIMARY KEY AUTO_INCREMENT,
