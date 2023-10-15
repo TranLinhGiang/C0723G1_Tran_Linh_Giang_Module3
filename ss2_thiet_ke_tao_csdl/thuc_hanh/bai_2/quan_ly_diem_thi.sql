@@ -13,6 +13,7 @@ CrEAte tabLe monHoc (
     TenMH VARChar(50),
     MaGV VARChar(20)
 );
+
 CrEAte tabLe bangDiem(
  MaHS VARChar(20),
  maMH VARChar(20),
