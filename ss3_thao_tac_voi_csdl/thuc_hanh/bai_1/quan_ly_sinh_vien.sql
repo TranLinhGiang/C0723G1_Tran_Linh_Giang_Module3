@@ -5,7 +5,6 @@ INSERT INTO Class
 VALUES (2, 'A2', '2008-12-22', 1);
 INSERT INTO Class
 VALUES (3, 'B3', current_date, 0);
--- 
 INSERT INTO student (student_name, address, phone, `status`, class_id)
 VALUES ('Hung', 'Ha Noi', '0912113113', 1, 1);
 INSERT INTO student (student_name, address, phone, `status`, class_id)
