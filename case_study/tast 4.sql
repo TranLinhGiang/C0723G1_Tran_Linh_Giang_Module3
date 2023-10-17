@@ -8,7 +8,9 @@ FROM
     khach_hang k
         LEFT JOIN
     hop_dong h ON k.ma_khach_hang = h.ma_khach_hang
+    join 
+    loai_khach lk on k.ma_loai_khach = lk.ma_loai_khach
 WHERE
-    k.ma_loai_khach = 1
+    lk.ten_loai_khach_hang = 'Diamond'
 GROUP BY k.ho_ten
 ORDER BY so_lan_dat_phong ASC;

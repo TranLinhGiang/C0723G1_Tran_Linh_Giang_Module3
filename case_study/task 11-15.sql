@@ -16,9 +16,9 @@ FROM
     hop_dong hd ON kh.ma_khach_hang = hd.ma_khach_hang
         JOIN
     hop_dong_chi_tiet hdct ON hd.ma_hop_dong = hdct.ma_hop_dong
-        JOIN
+       inner JOIN
     dich_vu_di_kem dvdk ON hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
-      AND  (kh.dia_chi like '%Vinh' OR kh.dia_chi like '%Quảng Ngãi')
+      AND  (kh.dia_chi like '%Vinh'or kh.dia_chi like '%Quảng Ngãi')
         JOIN
     loai_khach lk ON kh.ma_loai_khach = lk.ma_loai_khach
         AND lk.ma_loai_khach = 1;
