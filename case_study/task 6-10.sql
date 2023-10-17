@@ -55,8 +55,8 @@ WHERE
             khach_hang);
 -- task 9: thực hiện thống kê doanh thu theo tháng, nghĩa là tương ứng với mỗi thnags trong năm 2021 thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng;
 SELECT
-  thang,
-  COUNT(*) AS so_luong_khach_hang
+  thang as tháng,
+  COUNT(*) AS số_lượng_khách_hàng
 FROM
   (
     SELECT
@@ -71,22 +71,14 @@ GROUP BY
   -- task 10: hiển thị thông tin tương ứng với từng hợp đồng thì đã sử dụng bao nhiêu dịch vụ đi kèm.Kết quả hiển thị bao gồm:
   -- mã hợp đồng, ngày làm hợp đồng, ngày kết thúc, tiền đặt cọc, số lượng dịch vụ đi kèm;
 SELECT
-  hd.ma_hop_dong,
-  ngay_lam_hop_dong,
-  ngay_ket_thuc,
-  tien_dat_coc,
-  COUNT(DISTINCT dvdk.ma_dich_vu_di_kem) AS so_luong_dich_vu_di_kem
+  hd.ma_hop_dong as mã_hợp_đồng,
+  ngay_lam_hop_dong as ngày_làm_hợp_đồng,
+  ngay_ket_thuc as nagyf_kêt_thúc,
+  tien_dat_coc as tiền_đặt_cọc,
+  COUNT(DISTINCT dvdk.ma_dich_vu_di_kem) AS số_lượng_dịch_vụ_đi_kèm
 FROM
   hop_dong hd
 LEFT JOIN hop_dong_chi_tiet hdct ON hd.ma_hop_dong = hdct.ma_hop_dong
 LEFT JOIN dich_vu_di_kem dvdk ON hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
 GROUP BY
   hd.ma_hop_dong;
-
-  
-   
-   
-   
-   
-   
-   
