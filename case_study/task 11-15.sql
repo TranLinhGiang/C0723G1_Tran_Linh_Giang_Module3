@@ -30,8 +30,7 @@ hd.ma_hop_dong as mã_hợp_đồng,
 nv.ho_ten as họ_tên_nhân_viên,
 kh.ho_ten as họ_tên_khách_hàng,
 kh.so_dien_thoai as số_điện_thoại_khách_hàng,
-dv.ten_dich_vu as tên_dịch_vụ,
-hdct.so_luong as số_lượng
+dv.ten_dich_vu as tên_dịch_vụ
 from hop_dong hd
 join nhan_vien nv on nv.ma_nhan_vien= hd.ma_nhan_vien
 join khach_hang kh on kh.ma_khach_hang= hd.ma_khach_hang
