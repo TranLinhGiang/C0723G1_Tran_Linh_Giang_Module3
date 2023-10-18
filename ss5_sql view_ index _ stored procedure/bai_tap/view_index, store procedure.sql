@@ -73,8 +73,6 @@ from products;
 
 
 -- Tạo store procedure sửa thông tin sản phẩm theo id
-
-
 delimiter //
 create procedure update_product_name(
 `name` varchar(50),id int)

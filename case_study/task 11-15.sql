@@ -58,23 +58,29 @@ group by hdct.ma_dich_vu_di_kem;
 
 -- task 14: Hiển thị thông tin tất cả dịch vụ đi kèm chỉ mới được sử dụng một lần duy nhất. Thông tin hiển thị bao gồm, mã_hợp_đồng, tên_loại_dịch_vụ, tên_dịch_vụ_đi_kèm,số_lần_sử_dụng
 -- (được tính dựa trên việc count các mã_dịch_vụ_đi_kèm );
-select
-hd.ma_hop_dong as mã_hợp_đồng,
-dvdk.ten_dich_vu_di_kem as tên_dịch_vụ_đi_kèm,
-ldv.ten_loai_dich_vu,
-count(hdct.ma_dich_vu_di_kem) as so_lan_su_dung
+SELECT 
+    hd.ma_hop_dong AS mã_hợp_đồng,
+    dvdk.ten_dich_vu_di_kem AS tên_dịch_vụ_đi_kèm,
+    ldv.ten_loai_dich_vu AS tên_loại_dịch_vụ,
+count(hdct.ma_dich_vu_di_kem) as số_lần_sử_dụng
 from hop_dong hd
 join hop_dong_chi_tiet hdct on hd.ma_hop_dong= hdct.ma_hop_dong
 join dich_vu_di_kem dvdk on hdct.ma_dich_vu_di_kem= dvdk.ma_dich_vu_di_kem
 join dich_vu dv on hd.ma_dich_vu= dv.ma_dich_vu
 left join loai_dich_vu ldv on dv.ma_loai_dich_vu= ldv.ma_loai_dich_vu
-group by hd.ma_hop_dong;
--- group by hd.ma_hop_dong;
- -- tast 15: Hiển thị thông tin tất cả nhân viên bao gồm mã_nhân_viên, họ_tên,tên_trình_độ, tên_bộ_phận, số_điện_thoại, địa_chỉ mới chỉ lập được tối đa 3 hợp đồng từ năm 2020 đến 2021;
- select
- nv.ma_nhan_vien,
- nv.ho_ten
- from nhan_vien nv;
+group by hd.ma_hop_dong, ten_dich_vu_di_kem;
+ -- tast 15: Hiển thị thông tin tất cả nhân viên bao gồm mã_nhân_viên, họ_tên,  tên_trình_độ, tên_bộ_phận, số_điện_thoại, địa_chỉ mới chỉ lập được tối đa 3 hợp đồng từ năm 2020 đến 2021;
+select
+nv.ma_nhan_vien as mã_nhân_viên,
+nv.ho_ten as họ_tên,
+td.ten_trinh_do as tên_trình_độ,
+bp.ten_bo_phan as tên_bộ_phận,
+nv.so_dien_thoai as số_điện_thoại,
+nv.dia_chi as địa_chỉ 
+from hop_dong hd
+join nhan_vien nv on hd.ma_nhan_vien= nv.ma_nhan_vien
+join trinh_do td on nv.ma_trinh_do= td.ma_trinh_do
+join bo_phan bp on nv.ma_bo_phan= bp.ma_bo_phan;
 
 
 
