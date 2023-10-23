@@ -13,13 +13,15 @@
         <button style="height: 31px;
         width: 39px;
         margin: 1px;
-        background:#14425d;border-radius: 9px;">
-                <i class="fas fa-bars" style="margin: 6px;"></i></button> menu
-        <input class="input" type="type" placeholder=" Search..." style="background:#e5edf2;" />
+        background:#14425d;border-radius: 9px;border: 0px groove #070606;">
+            <i class="fas fa-bars" style="margin: 6px;"></i></button> menu
+        <input class="input" type="type" placeholder=" Search..." style="background:#e5edf2;    border-radius: inherit;
+        border: none;" />
         <i class="fa fa-search"></i>
         <span></span>
         <i class="fa fa-user-circle"></i>
-        <button>log in / log out</button>
+        <button style="border-radius: inherit;
+        border: none;">log in / log out</button>
     </div>
     <h5 style="    margin: 1px;
     font-size: 10px;
@@ -27,99 +29,96 @@
     </h5>
     <div style="background: #d1d1d1; height: 280px;border-radius: 5px;">
         <!-- truyện tây du ký -->
-        <button onclick="window.open('https://dtruyen.com/tay-du-ky/')" style="margin: 9px; box-shadow: 1px 1px 1px #AAA;">
-                <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">TÂY DU KÝ</h5>
-                <img style="height: 71px;"
-                    src="data:image/jpeg;base64,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"
-                    alt="" />
-                <!-- truyện doraemon   -->
-                <div style="background: #d1d1d1;"> <button
-                        onclick="window.open('https://nhasachmienphi.com/truyen-tranh-doremon.html')"
-                        style="margin: 7px; box-shadow: 1px 1px 1px #AAA;">
-                        <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">DORAEMON</h5>
-                        <img style="height: 71px;" src="https://ss-images.saostar.vn/wp700/pc/1607919080244/23.jpg"
-                            alt="" />
-                        <!-- truyện conan -->
-                        <div style="background: #d1d1d1;"> <button
-                                onclick="window.open('https://thamtu-conan.blogspot.com/2017/07/conan-tap-94-chap-993.html')"
-                                style="margin: 7px; box-shadow: 1px 1px 1px #AAA;">
-                                <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">CONAN</h5>
-                                <img style="height: 71px;"
-                                    src="https://upload.wikimedia.org/wikipedia/vi/6/63/Nhan_vat_Tham_tu_lung_danh_Conan.jpg"
-                                    alt="" />
-                                <!-- truyện trạng quỳnh  -->
-                                <div style="background: #d1d1d1;"> <button
-                                        onclick="window.open('https://truyendoc.top/920/trang-quynh')"
-                                        style="margin: 7px; box-shadow: 1px 1px 1px #AAA;">
-                                        <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">TRẠNG QUỲNH</h5>
-                                        <img style="height: 71px;"
-                                            src="https://vinabrand.vn/uploads/images/news/1429776404_news_2312.jpg"
-                                            alt="" />
-                                        <!-- truyện sự tích cây khế  -->
-                                        <div style="background: #d1d1d1;"> <button
-                                                onclick="window.open('https://eva.vn/lam-me/truyen-co-tich-cay-khe-su-tich-an-khe-tra-vang-c10a455525.html')"
-                                                style="margin: 7px; box-shadow: 1px 1px 1px #AAA;">
-                                                <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">CÂY KHẾ
-                                                </h5>
+        <button onclick="window.open('https://dtruyen.com/tay-du-ky/')" style="margin: 9px; box-shadow: 3px 3px 2px #AAA;background: #893e4c;border: navy;">
+            <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">TÂY DU KÝ</h5>
+            <img style="height: 71px;"
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKAAdQMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAFBgMEAAEHAv/EAD4QAAIBAgUCAwcCBAQEBwAAAAECAwQRAAUSITETQQZRYRQiMnGBkaEjsRVCwfAkUtHxM0Ni4RYXcoKiwtL/xAAaAQADAAMBAAAAAAAAAAAAAAADBAUAAQIG/8QAKREAAgIBBAEDAwUBAAAAAAAAAQIAAxEEEiExEwUiQRQyYSNCUVKBcf/aAAwDAQACEQMRAD8AY46jUoZeDi1DUoB+ov18sRQ0tl0hbaftiGaKZVZtG4Hc7Yo7QZktJWRJUiKRv0pB8Xl6/TALOWkpqt6V3IN9lvsPIj0OPdR1FjV2XSw+Ejj74kroBneWiSHetpVIAHMkY5X5jkeY2xtAK3/Bm/iL8lRKZo9TDWp5Bw2Zc9Q8SsAjAGx0tc4T44D0w7EAHgE4u5bmlTQo6RNsTw24GGrE3DiDBxHls2SAKlSBETxq74nTMYLE9SwHpgDmlW1d4Vld7JUBAUbY8He2EaTMq1ELK7klvdYc3PqO1sRr7RW+0yhRpjauROrtmtKv/MF8eP4jBI6qHGp+Bji9RmlbGzLyQNr34A9O5tthz8Bw11bPNX1DBoQOnCvIv/MQfLt9cZW+8zLKAi5Y8x7d4ogNcii/G/OMtGbbixxkdDrYO53HbEUlL0z7pNvLB8LE5uVI72TFcxWa4x71aWOKk1WIplRze57DGgsyHcp2Eo+X9cZiTLIbCQk86cawImZiRJTLISn8p2YcYF1cperkpEjIBI/3vjeU+IEqHcONBAvzivW19ZHUlo6ZWjflgtyMNqrA4M1mFcvp4oFkaRY3RlIsRx8xhEpZ58vzZynBe94+1uCMMVBmIlmEMtwxFip2OPcmTQmpbpXI+ewx2ABkN8zAYMzXKI6t1raNR0Xv1Y1/5b//AJPIwBNDKZUQrpZux2thrWf+EVEgmUGFlIdOBYb2H7j64BtXSZpVmTpop2VQgsB5A+eFL9f9MmD38RzTaM6g5HQk1TSOKJIY5C0YBFxijR5XHUVq9RR01kuFbg/bBepo6mnhLtKWj727DA2Kd9d1V3tvZRf9seWsuuL+8cz0NdKhMKYe/wDLfJ6qZH1VKRkf8MPdfud/pfGqqlrfDTLDSxH2KJVC+RHHPni74U8RyPWLS1Y0Kwsqtypw41CI5u6Bhp4P9+uLPp988/rFsR9rxATxLplBkUk230nbBha+OoVdNtTC9r4qZ9k0c8hlyyn0SC4Zbc+oH1wIZZFq4WET9QWDEg7Wte+LX6bDIicPOuq+9tucRZbFepLSkWHwriSn6kzgsrBQL+WJoBF1LorFrHdsBLY4modpJ1JdVQC1sZivl4/4m3l/XGYARNzm2WVQpZw1rjDTFnFNU6IwLE7YTAuJYi4lXpAl7jSB3OK71huTBBo0ZllplqIjTuFe1rLyRghR1cBo19hlWTo7MR71z3+uEfOZcySodkaeP4UdCdrEb/36m3lgfTVUschSmqGjEmzxxSEXsdr74k2atc7ZQq0VjruE6HmMQzNTSPSs7snKDcLfk98LFHlc1JVSQVDWaCQrcDk22P2tth38OZpQtkaZlUvHHIqlZncgEEcj+/PCbVZ6ma5hVVMKaAWFluCdgBf8YnepWKVVh8Rz01bQzDHEmyugr41kjqKlpISzEs/l2FsA6qrzRXJo4oYKMs67pqYkXt8rn8YZ6vMJ46YmGlMyFARpcAnz52/OBHt8QhZWhIvewZhcn1wJnHDGUEBPEp5JlmYZlXrI0cmnuy7Eeo+uHGh8RVTVfsbEFoJDGXts4Fr4p+GKljSy1ELIgRTp8727jyxVyShklrXrqolEZy+jux7n0F8K1Cy2z2QGoati3l6A4/7OiQBWYkwadRuvu8/PFA0rOZPaOmRwQCCcR01cQTqlBvyPL5YrRTpFLI4mdyb34tzi8oInn56paKESyCNw1uFB3xkFK4mYND0wAfesR+ceKCpgFQ7IpQsDub+eJI5mVpS0mok8XOO+ZklpHEU80THddJv8741jWXFGkmYgEnTc2+eMxo9zU5tpxtQVYEGxB2OJdO9sZpxYODxAZlrOYmzZhU06ELT0aM8KWvI2oqF5Hu8k7+WKh69TRxQtSwdS9pI7gWXsV8juP9RgnRaoaLXGrMZWki0gXvsjX/H5xSpKqmFQ05rGuBdoSvw7b9r/AO2PKaxfFaVxxPR6A76uTB8uUtNlBd+osiSyBZz8FlYr72/ewwApa0wuscjFbtZh5EcjHRMunganlj6kRgs5uGBDFgD/AO7kj6YRvGvh6romXNKGMPTFVkfpqRpFubHHBxYMGN06pq8q3UPOuYim6lFUAxWvoYg2+VxfASJKiciCol1TySgDQvY8DC/TZzLaMROzFjpI5t8sH6PMqPJZUlq0knmffStgy/U/745Nbt7QIVrVVN8fcgoqfLac0cbWmfVrA3NuSftiyxjhQIL7eeAnhnxrktdXimlV6Wqm9yLqWs4ve2q/JN+bXww10S6ztbFHS6bwjJ7M87qrvI0qxvaS6MxPliaaGqQi8DDWbe6bm/kbd/njxl9J7bVNHHKoSIjrMp3T0+eGFjAsbRB20E3LE3YkcG55474NZYEMXVCYAVZInEcl1kA+H07Y3+uSQEYgD8Yswwos5d5Osr3KS/5vMHyI4tj1POEX9M2uMHXBEExx3PeTSG89x/l/rjMT5O0dpSACTa/5xmBt31NA5lJsjytIgWactbf3sUv/AA2ZEZ4JNgdtXfDjWy0sQu8cbE7EEDALPM4Sio5hTFICIuqTbYLfSPzjTapq13GGWrecQFUqcrho4TIvtTzzNEvILLGGsftgZJmsdZSjpKNUxtpt8G298U56l/4ZlLOxLyJJUkPubyOd/nZcDXqRTRySL8Zdgl/Mm5OIuqtN7ZMuen6cjgdmEKoQexGeMlXo5VEhReAwA3+wxaXMYq17ApNMkCao7kRyXNrEN3xR8PJ7RluawupkMkPUJva5BNv2wv6kc7qV473sccUjOVMp/RiwsueVkHifIYshzuCalYpQTqamLWdWgi4ZAe9jx6EYdvDXgx5cu9tzbLYK+SrZJGhnkEbQKNwF5PlcErcYGyU1JmOX5TldU0rKlQZI6lLDSGvqTftx9r46TW0MUcNS1PWThpgtkYhxDb/KCOPQ4obvGfzIFzNjxH+Zwrxd4KznK616yjPXhEhlWGJSskIvfZbnUB5qW9cdDyHxK2c+GVrRY1ixuCunl1/12NsMcsENPl5ir6pas6dTEoFG381hwR5jCPJHTeE8peWnq3qmrGaoj6ttiQBa45sALnuThjT3Bmw0Vell5EM5DS57leQM0ilKmVRKYy4Ys7bkkW+Lz3IwLbMPEhjnapnfQI22kiUaTbYgrt98L48R+JINFfV/4uNhrKRudgdwfliTPPFc9Zl7y9QIkiXUX33GE3DbpWqQBeYByDxLmlPm0AWqdg041o5JDFiA/wBx+wx2SMtJbWRc9scHyOlkqs7y2nUsZJqqL3f+nUDe/wAt8d9ij6bXOn6HcYr042TznqLYYYhPLIdPVt6f1xmPWWSX6tmHbv8APGYG3cWRsqIuZrnAo6R55kdwuyqGPvMdgMKec11TmdBmEgfqOvs8PudyCuq31BwzZ3JAuXSxGnLST/pog3ueb/j72wCip6LIoalcxqo7qvVFOn+chltc8jc4U1+MjEt6IAr+ZTz1pYTEsQjeKnpo4hpce6QN7+W5wIdpCQZVYMBwwwGz7Njq9lozLfXqa9wV8gN9vpbBjLYKmujLwQySME1uoG6juThLx4GTPTen20q+0fHzGHwxIn8VjgU7NTlD/wBTc4CzK0UkscoLdNygud9ie/OIFZuY5GRv5XQ2I+uLdHGWkKzXlZjcSMNyfXf845qqO/dKHj8NhYdGGMojEtMITIiKrCRJWXdT3B/fBhPEkOa0MlZQ5tBSSqdEkcyqroAebE3s1r7+eKGWUxglBSP3k3YMbIPUnywPRaOpzSaOMxzzy6m6saARx6VJ5JF+D721rjthm4ZxkSBqFDXFl5AkviHOZa6maloNUUTppknYWZvPSPL1OALeHmlyugV6x1e5iSJlZmeRr6dv5Qbc/LbF2bw9neYSANNHDGRcGE2GnzLi9x9cWIW/whOWThYMtXrPVkE9WRhoGkHtu1t/M842ieEZJ5iocXnCjgRRy6mzhswmy12kogsf67TKR0Y1H552A5uMZL4XqnDPS1cNVDGVWRpGMPS1X0lg2wvY8E746bHllJR0q1lKhq5IqVBBpuHeygAng8bkDncDtgGK9cyyoUksnUrqqsDJYaFG2kM5AueTYDyA9CSxtpGOzONOpuUk9AzXgrIMsoJkr5ak1FWrOkLKpVBsAbXO/Ox2+WHIzX3DbYCxdPLMolngUE01PZGlQEar3JI9ST97YtRSGSKKUI8AliR+mwvp1KDbj1w1XZxtPci62nfm1ftzgRgyRtRnuf8AL/XGYr+HdTNU30i2n/7Y3jC0WVMDGIDiq5HmExF9Buvf3jYD84FVWWx5rXGZqpYFayFZN/h94b/Lb74JULtKojbYDgj9sCnoRR55P7QwNKVQqkkjICLnUfdBJ0jgbfthbVH9wlXS/wBYL8TZWxzuaRI0vPpkBXhtSi5/fHvLps7oIqybJqGOSGmKtUySMLsFF9KrcahY3PzGGaDJWeFJPijZbxlGJUA8AE72HritnjR5TU0UVLFHJVJAruNF2UszaN+Bcav7tgWPYGlA2AUlAeSZFXZVRT5blmcZUpWkr4tWgtfQ/dRffsftiWjy9SFBsCN9h/XBHwRTS5l4PqsvmpGSnpqxjTyBbLIuok6fVWuD674r0UqrWSUbTKypbpSv7pb0P14Nt/nyQGsEZ4havULTTsPJE1m1XFlVNGHohVRVIaP9QjTcDZStt7/Pt6YUp50M+6xUCkGJ0j1dhfcE9yAOcdBrsolr6KSmmifRIPddLNoYcMPUfsSMCsmoMvyWeNc1qOk85ZGkZRvYE6QDsF+9za/kB21734PEzTa+qqskj3yOgy2Sr8HLTrGxWWB5EtcEuGdlse/y/wC2A/8AD81raWeNonjR5A8gm/S1NpsBY/Pbtth+ymtp5oESCZRpOkNYhTbYqR24wMzHKoTXPUVis8EqhY4nF0W3Nt7XNwd/XHOoXaogNLrDubI7OZDBU1ccYSoo1ilsB7jaypFuTsAdjsL/AD7YHS5dF1qqYSVMbTVAnBSJQ0ZBJABs2wJ8sGmQRwxmKXVGqhbsbk22xUr6+ky6FZq6aOCJnWME3tdjYYbFYKjMn+d0dinGZS9m9pZPapaiq0G6CokDKp7e4Aq/cHFiZKhdRZVOokkljc+vzxfeJG3Oh1PGwv8AQjFeSnph8Ejg+V+MdAAdQLln+4wj4XufabgfyfC3/qxrE3htI9VSNZYjRcn6+mMxrInO2L8lKFeOUzwnLgLT6d242FjtzbFbxPHT5jHS+ySOpUOYtPvBjqK2/wDifTEstNbLZpJI9akhQlufUev4/OA9TNFTPHQZW8skyoUDycAX3FhxycSNQGZwFPUoU4Xkx/8ACE3XK0hQSx09MvVk7hrb/c3+2M8KVEVUZDNCr1FY5qjqW5Go3AO22lDGoHphY8CZ7X0NTmVI9K8jzLrikIAu4uPsbjBXI6CupDX1irNNJIxTqqAdbA2O5Oq1xcW7YNUrBQuYvcRkzWR+I6an8F18ZOl4qyqjZVF7KXZr7+ht/rjmDyPmFVXTxSSSVn6jJHGlxpUXYg33sAPz3th+yPwQJMkrP4rLJST1EhkjjtfTYsbkd7kjbnb1xU8B5Iaasrq4zo83R6UIIuAW3JI+g/OB6m5acu/+RrSkCs7e5S8GV85oaihznNInVohIYWtoRCOC1vK335wveNvFUmaxUQoFMPTkb9SOV7vtvsWsBtwAMSeIqEZbm8+WLVLKk1LqnMZB98krp4uABbbjnAmfJdUlKplEaAXAkbcDfn5/1wfTtWuX/tDfTWWplR1GnwNm9VTmrpGnWrpYC8qyvGwdxcG/O1733Hng5XZzG9ZKJp1jdUtII325Ise18LHgqT/FZwYVuqCI7sALC/ODC5RkOX07ZnUwuo1qemhJVmYgA6d9t+PTCuocu+1jC101q3UoUudSUmaRuszeyKSHiXixJ7emxva/OCPizOqSFkpKimSo66SLJEh3CMLXt8x5dsLuaCI10/RZnQN7vUBBHobj/TEVNNCMvrJpQstU0pXXICzAbC4bzGGktK17Y3foq2ZWHEKeFZaiiy5qWIu7woHVNdy6jm2okL8uPUYYcmzJMwE16WRJIW0TRG+3lsf6YU8tdfbaOzMLyxh7m4KlgG2+V8dHFE2i0FVGR3BUYLRksWJk71GiughVEu+HemTUARultOx+uMxY8P00ye0B2H8trL88ZhggSVFiWWKZzAlTFvsbyCwI9L+pxcgytV0SoqF9gHCi/wB+cKNC6SzatDPqFwBe99/ofxg/TvLptG8sChfgjJ9fL8+mA+IAQ4JJjRl1F0JXmmpyZGQBJLA2P074o1DV9G5SNwsI4Kra2I6DN66Wh1QUcLhEDOyTkDjuNPpg8iSApM4MkTDjRcj19cCr25nVtbKeZDT1Dz0ymWeQyLYqsn97nHMM6Wtyyriow4WUKHDUzNdr7Dbnt646o9N7Wt6aMAE21XP1wq5FROPEuZzZjTqamMlVlb+UHYBd/IYHryi1b9uYz6e/jctEKtyt4poK51kM1WgXS99Rawv97/vifxDFCK+SCMq8aRopYCwdrXJ+t8G84r4cyzHqiKog6N0XVYATq3u87WI+WFyskead3kFpHYlha3vXN8K1OzICwwZ6LTe/nHEIeEjSw1xp5bBqgbLp91mXcfU77emLHjOb/EUVEu46yyEDkkEb/wBMLr3E0TAlSpuCDaxwYrI5p41qq06pgQpcLxYkbYwr+oHi2qqVW4geT422K+9bS3I+fripW1aU1RTdYfoMyhgDbTxdiO/BxfMZd331WJF9r7E/6YBeJMqzBZw/s8xjaPqH3Ttbk/nDVYy03r3NdIYQ1Cwj0lCDosyn5bj82w+08kqN06pyARdSDjkGRSypUlZi2ll5bHV8kqIxl0DVcdV7QqcoBuvY7+lsMVfpkiStfaNTSlo76jR4bkTVUhHc2CXJa9/ixmPHhiqhmaqszOwCXDxi4+K2+MwXyfiSNpixSUJhDKb3B+MrfUPPbYftti3rRA8Ie8hG7Hhe/n88ZUyEQ2FrKtwbg3v6YEGjpGFVEJ6lvaHBe1wBYW2NtthjZGRCg46l9GqaSIwJWqpb3WCgntax3+uGFc5nhgh6AR47EE6TvtsNjt339MJtUkyUSpTmUmS4JVzxbg34+mK6tJFAscc0upNlTVsCex7kW7eWB+PHULZe1nc6fR5pTMqxmfpuWC8jdj/XGSxquYzzTAhXQBntYNbbc9sczpcqp0y+ngmaQCKZZlXa117W7cYZjPT1dHLR5jNLolX3um+k7Hg9vxji1CwweRBqSvUYYMloGgaGpZZWkcyTB1A1b77duw+2PKeGfDpnjemoVnRrgnqFkXnfc+YtgMZKHql9U4ZY+lGZSbqh5sRe59Ti5lFVTZbQQ0VPUr0YY/dDsAQN9ze3njS01jqd/UXD90mq/CuQ02T1LmjousqlRJyVbsLnvvhdjoxJmFDS6QS07O23AsSL4vTZNR1OWy0ZkkaGSpWpuCpIcW9LWOkfnFjL8uip8ylrqeCQzy2LWOoDe+w+p/sY09AZgf4na6mzHJhmn8O5MjL1IIlm3tGDawve9vn++L9YMsMRikih0spjsTzfYi+FXOpUjqZq0x1Rq4aYr0Yti0ZFiN9ud+eQPTCecxkjp0ijyeuZIZ5ZIwylSA3nYfM4IqKIF7bG+4w3VeF8opKmVWZJISbIACpi97YE98XU9n6DJTiORQoAF91sO998IOZT5pmEM8UtDVjWwa/SOPFK+ZJUyn2Ks6dQiRyro+IDgHY288dYAgy5ICmdL8KR9OWsYqqhwhBHce9jWIfBs7xwTU3sNUOika6pkVb/ABcWG+NYzEwz/9k="
+                alt="" />
+            <!-- truyện doraemon   -->
+            <div style="background: #d1d1d1;"> <button
+                    onclick="window.open('https://nhasachmienphi.com/truyen-tranh-doremon.html')"
+                    style="margin: 7px; box-shadow: 3px 3px 2px #AAA;    background: #99cee6;border: navy;    background: #85d1f3;">
+                    <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">DORAEMON</h5>
+                    <img style="height: 71px;" src="https://ss-images.saostar.vn/wp700/pc/1607919080244/23.jpg"
+                        alt="" />
+                    <!-- truyện conan -->
+                    <div style="background: #d1d1d1;"> <button
+                            onclick="window.open('https://thamtu-conan.blogspot.com/2017/07/conan-tap-94-chap-993.html')"
+                            style="margin: 7px;  box-shadow: 3px 3px 2px #AAA;border: navy;     background: #2d2c50;">
+                            <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">CONAN</h5>
+                            <img style="height: 71px;"
+                                src="https://upload.wikimedia.org/wikipedia/vi/6/63/Nhan_vat_Tham_tu_lung_danh_Conan.jpg"
+                                alt="" />
+                            <!-- truyện trạng quỳnh  -->
+                            <div style="background: #d1d1d1;"> <button
+                                    onclick="window.open('https://truyendoc.top/920/trang-quynh')"
+                                    style="margin: 7px; box-shadow: 3px 3px 2px #AAA;border: navy;    background: #d1b698;">
+                                    <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">TRẠNG QUỲNH</h5>
+                                    <img style="height: 71px;"
+                                        src="https://vinabrand.vn/uploads/images/news/1429776404_news_2312.jpg"
+                                        alt="" />
+                                    <!-- truyện sự tích cây khế  -->
+                                    <div style="background: #d1d1d1;"> <button
+                                            onclick="window.open('https://eva.vn/lam-me/truyen-co-tich-cay-khe-su-tich-an-khe-tra-vang-c10a455525.html')"
+                                            style="margin: 7px; box-shadow: 3px 3px 2px #AAA;border: navy;    background: #393542;">
+                                            <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">CÂY KHẾ
+                                            </h5>
+                                            <img style="height: 71px;"
+                                                src="https://nhasachphongphu.vn/wp-content/uploads/2022/07/z3569153104303_dd14778d2d755ded24b0347b0b55a5af.jpg"
+                                                alt="" />
+
+                                            <!-- truyện chó cưng -->
+                                            <button onclick="window.open('https://truyenhdx.com/truyen/cho-cung/')"
+                                                style="margin: 9px; box-shadow: 3px 3px 2px #AAA;    width: 67px;border: navy;    background: #060b118a;">
+                                                <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">CHÓ
+                                                    CƯNG</h5>
                                                 <img style="height: 71px;"
-                                                    src="https://nhasachphongphu.vn/wp-content/uploads/2022/07/z3569153104303_dd14778d2d755ded24b0347b0b55a5af.jpg"
+                                                    src="https://truyenhdx.com/wp-content/uploads/2023/01/cho-cung-1673886224.jpg"
                                                     alt="" />
-                                                <div>
-                                                    <!-- truyện chó cưng -->
+                                                <!-- truyện cổ tích -->
+                                                <button
+                                                    onclick="window.open('https://donghohaitrieu.com/kinh-nghiem/review-sach-hay/30-bo-truyen-co-tich-viet-nam-hay-nhat-cho-be-thich-me.html')"
+                                                    style="margin: 2px; box-shadow: 3px 3px 2px #AAA;border: navy;background: #553b3b;">
+                                                    <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">
+                                                        CỔ
+                                                        TÍCH</h5>
+                                                    <img style="height: 71px;"
+                                                        src="https://sachtruyen.net/covers/kho-tang-truyen-co-tich-viet-n.b36f7.cover.jpg"
+                                                        alt="" />
+                                                    <!-- truyện thánh gióng -->
                                                     <button
-                                                        onclick="window.open('https://truyenhdx.com/truyen/cho-cung/')"
-                                                        style="margin: 9px; box-shadow: 1px 1px 1px #AAA;    width: 67px;">
-                                                        <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">CHÓ
-                                                            CƯNG</h5>
+                                                        onclick="window.open('https://www.nettruyenus.com/truyen-tranh/thanh-giong-178540')"
+                                                        style="margin: 9px; box-shadow: 3px 3px 2px #AAA;border: navy;background: #46446afc;">
+                                                        <h5 style="font-size: 8px;font-family: math;color: #4CAF50;">
+                                                            THÁNH GIÓNG</h5>
                                                         <img style="height: 71px;"
-                                                            src="https://truyenhdx.com/wp-content/uploads/2023/01/cho-cung-1673886224.jpg"
+                                                            src="https://ebooksphucminh.vn/wp-content/uploads/2021/08/sua-bia-thanh-giong-scaled.jpg"
                                                             alt="" />
-                                                        <!-- truyện cổ tích -->
+                                                        <!-- sọ dừa -->
                                                         <button
-                                                            onclick="window.open('https://donghohaitrieu.com/kinh-nghiem/review-sach-hay/30-bo-truyen-co-tich-viet-nam-hay-nhat-cho-be-thich-me.html')"
-                                                            style="margin: 2px; box-shadow: 1px 1px 1px #AAA;">
+                                                            onclick="window.open('https://eva.vn/lam-me/truyen-co-tich-so-dua-c10a389981.html')"
+                                                            style="margin: 3px; box-shadow: 3px 3px 2px #AAA;WIDTH: 75px;border: navy;    background: #542354;">
                                                             <h5
                                                                 style="font-size: 8px;font-family: math;color: #4CAF50;">
-                                                                CỔ
-                                                                TÍCH</h5>
+                                                                SỌ DỪA</h5>
                                                             <img style="height: 71px;"
-                                                                src="https://sachtruyen.net/covers/kho-tang-truyen-co-tich-viet-n.b36f7.cover.jpg"
+                                                                src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/96/So_dua_bia_truyen.jpg/250px-So_dua_bia_truyen.jpg"
                                                                 alt="" />
-                                                            <!-- truyện thánh gióng -->
+
+                                                            <!-- cây tre trăm đốt -->
                                                             <button
-                                                                onclick="window.open('https://www.nettruyenus.com/truyen-tranh/thanh-giong-178540')"
-                                                                style="margin: 9px; box-shadow: 1px 1px 1px #AAA;">
+                                                                onclick="window.open('https://thvovanthang.hcm.edu.vn/truyen-tranh-online/cay-tre-tram-dot/ctmb/85254/434883')"
+                                                                style="margin: 6px; box-shadow: 3px 3px 2px #AAA;WIDTH: 75px;border: navy;    background: #485b6d;">
                                                                 <h5
                                                                     style="font-size: 8px;font-family: math;color: #4CAF50;">
-                                                                    THÁNH GIÓNG</h5>
+                                                                    CÂY TRE</h5>
                                                                 <img style="height: 71px;"
-                                                                    src="https://ebooksphucminh.vn/wp-content/uploads/2021/08/sua-bia-thanh-giong-scaled.jpg"
+                                                                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/7/7a/Cay_tre_tram_dot_bia_truyen.jpg/230px-Cay_tre_tram_dot_bia_truyen.jpg"
                                                                     alt="" />
-                                                                <!-- sọ dừa -->
-                                                                <button
-                                                                    onclick="window.open('https://eva.vn/lam-me/truyen-co-tich-so-dua-c10a389981.html')"
-                                                                    style="margin: 3px; box-shadow: 1px 1px 1px #AAA;WIDTH: 75px;">
-                                                                    <h5
-                                                                        style="font-size: 8px;font-family: math;color: #4CAF50;">
-                                                                        SỌ DỪA</h5>
-                                                                    <img style="height: 71px;"
-                                                                        src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/96/So_dua_bia_truyen.jpg/250px-So_dua_bia_truyen.jpg"
-                                                                        alt="" />
-
-                                                                    <!-- cây tre trăm đốt -->
-                                                                    <button
-                                                                        onclick="window.open('https://thvovanthang.hcm.edu.vn/truyen-tranh-online/cay-tre-tram-dot/ctmb/85254/434883')"
-                                                                        style="margin: 6px; box-shadow: 1px 1px 1px #AAA;WIDTH: 75px;">
-                                                                        <h5
-                                                                            style="font-size: 8px;font-family: math;color: #4CAF50;">
-                                                                            CÂY TRE</h5>
-                                                                        <img style="height: 71px;"
-                                                                            src="https://upload.wikimedia.org/wikipedia/vi/thumb/7/7a/Cay_tre_tram_dot_bia_truyen.jpg/230px-Cay_tre_tram_dot_bia_truyen.jpg"
-                                                                            alt="" />
 
 
-                                                </div>
-                                
+                                    </div>
+
 
 
 </body>
