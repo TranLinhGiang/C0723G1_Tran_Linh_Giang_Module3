@@ -1,0 +1,53 @@
+body {
+    background: grey;
+}
+
+.head {
+    background: pink;
+    width: 100%;
+    height: 100px;
+}
+
+.nav {
+    background: rgb(157, 68, 83);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 11px;
+}
+
+.section {
+    background: greenyellow;
+    width: 60%;
+    height: 200px;
+    position: relative;
+    top: 23px;
+}
+
+.article {
+    background: rgb(183, 140, 216);
+    width: 60%;
+    height: 200px;
+    position: relative;
+    top: 36px;
+    float: left;
+}
+
+.aside {
+    background: red;
+    width: 30%;
+    height: 414px;
+    display: inline-block;
+    position: relative;
+    top: -177px;
+    left: 14px;
+    width: 341px;
+}
+
+.footer {
+    background: burlywood;
+    width: 100%;
+    height: 100pxs;
+    position: relative;
+    top: -163px;
+}
