@@ -1,0 +1,69 @@
+body {
+    margin: 0%;
+    padding: 0px;
+}
+
+.dong1 {
+    background: #242526;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+}
+
+.dong1 img {
+    width: 50px;
+    border-radius: 32px;
+    position: relative;
+    left: 13px;
+    top: 8px;
+}
+
+.dong1 input {
+    position: relative;
+    left: 65px;
+    top: -14px;
+    height: 34px;
+    width: 222px;
+    border-radius: 13px;
+    background: #3a3b3c;
+    border: none;
+}
+
+.home {
+    position: relative;
+    left: 194px;
+    height: 38px;
+    width: 45px;
+    background: #242526;
+    top: 9px;
+    border: none;
+}
+
+.home1 {
+    position: relative;
+    left: 294px;
+    width: 39px;
+    height: 34px;
+    top: 11px;
+    background: #242526;
+    border: none;
+}
+
+.button {
+    position: relative;
+    left: 615px;
+    height: 48px;
+    width: 52px;
+    border-radius: 26px;
+    background: white;
+    top: 7px;
+}
+
+.hi {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    position: relative;
+    left: 6px;
+}
