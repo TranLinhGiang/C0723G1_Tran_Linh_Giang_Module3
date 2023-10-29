@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="GradleMigrationSettings" migrationVersion="1" />
-=======
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -16,5 +13,4 @@
       </GradleProjectSettings>
     </option>
   </component>
->>>>>>> C0723G1_Tran_Linh_giang_Module3
 </project>
