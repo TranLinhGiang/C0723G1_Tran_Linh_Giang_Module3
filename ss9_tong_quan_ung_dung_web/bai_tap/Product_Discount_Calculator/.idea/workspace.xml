@@ -4,100 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de839a93-1739-40c3-a07c-b93a51279a64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Product_Discount_Calculator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/product_discount_calculator/DiscountServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/Product_Discount_Calculator-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/7.4.2/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/build/classes/java/main/com/example/javawebcurrencyconverter/ConverterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/build/libs/java-web-currency-converter-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/java-web-currency-converter/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/7.4.2/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/build/classes/java/main/com/example/servertime/HelloServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/build/classes/java/main/com/example/servertime/ServerTimeServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/build/libs/server-time-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/server-time/server-time.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/7.4.2/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/build/classes/java/main/com/example/simplelogin/HelloServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/build/classes/java/main/com/example/simplelogin/LoginServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/build/libs/simple-login-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/simple-login/simple-login.iml" afterDir="false" />
+    <list default="true" id="481c4fd8-d5f1-4e4e-95ab-08d7bd6f6f6e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../bai_tap_lam_them_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/java/com/example/discount_servlet/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/java/com/example/discount_servlet/ProductDiscountCalculatorServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/webapp/discount.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,17 +63,17 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
