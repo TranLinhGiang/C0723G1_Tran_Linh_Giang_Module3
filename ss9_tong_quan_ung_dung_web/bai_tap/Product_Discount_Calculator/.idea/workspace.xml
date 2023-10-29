@@ -5,24 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="481c4fd8-d5f1-4e4e-95ab-08d7bd6f6f6e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../bai_tap_lam_them_database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/java/com/example/discount_servlet/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/java/com/example/discount_servlet/ProductDiscountCalculatorServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/webapp/discount.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discount_servlet/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_example___Product_Discount_Calculator_1_0_SNAPSHOT_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_example___Product_Discount_Calculator_1_0_SNAPSHOT_war__exploded_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Product_Discount_Calculator.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Product_Discount_Calculator.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +28,24 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -63,17 +70,26 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/C0723G1_Tran_Linh_Giang_Module3/ss9_tong_quan_ung_dung_web/bai_tap/Product_Discount_Calculator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.product_discount_calculator" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -166,12 +182,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="de839a93-1739-40c3-a07c-b93a51279a64" name="Changes" comment="" />
+      <changelist id="481c4fd8-d5f1-4e4e-95ab-08d7bd6f6f6e" name="Changes" comment="" />
       <created>1698553007958</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698553007958</updated>
       <workItem from="1698553009594" duration="1521000" />
+      <workItem from="1698620249858" duration="48000" />
+      <workItem from="1698620326241" duration="35000" />
+      <workItem from="1698620399899" duration="210000" />
     </task>
     <servers />
   </component>
