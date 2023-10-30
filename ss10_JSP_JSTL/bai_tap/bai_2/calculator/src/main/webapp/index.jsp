@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Simple Calculator</h1>
-<form action="/cal" method="post">
+<form action="/calculate" method="post">
 <table>
     <tr>
         <td>Fist operand</td>
