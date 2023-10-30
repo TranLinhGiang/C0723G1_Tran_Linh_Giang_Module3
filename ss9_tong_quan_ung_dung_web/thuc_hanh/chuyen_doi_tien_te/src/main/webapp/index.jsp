@@ -13,6 +13,7 @@
     <label>USD: </label><br/>
     <input type="text" name="usd" placeholder="USD" value="0"/><br/>
     <input type = "submit" id = "submit" value = "Converter"/>
+
 </form>
 </body>
 </html>
