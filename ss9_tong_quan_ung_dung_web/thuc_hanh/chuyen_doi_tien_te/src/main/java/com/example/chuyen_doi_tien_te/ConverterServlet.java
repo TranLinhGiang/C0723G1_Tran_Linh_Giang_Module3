@@ -12,7 +12,6 @@ import java.io.PrintWriter;
 public class ConverterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
     }
 
     @Override
