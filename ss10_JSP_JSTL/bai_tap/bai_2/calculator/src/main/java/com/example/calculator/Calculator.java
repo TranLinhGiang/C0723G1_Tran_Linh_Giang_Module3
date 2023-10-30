@@ -1,7 +1,7 @@
 package com.example.calculator;
 
 public class Calculator {
-    public static double calculate(double firstOperand, double secondOperand, int operator ){
+    public static double calculate(double firstOperand, double secondOperand, char operator ){
         switch (operator){
             case 1:
                 return firstOperand + secondOperand;
