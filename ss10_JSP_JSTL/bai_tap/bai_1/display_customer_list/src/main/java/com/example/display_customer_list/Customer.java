@@ -5,7 +5,6 @@ public class Customer {
     private String dateOfBirth;
     private String address;
     private String picture;
-
     public Customer() {
     }
 
