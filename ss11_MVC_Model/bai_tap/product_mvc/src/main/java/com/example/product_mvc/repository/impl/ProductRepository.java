@@ -41,6 +41,7 @@ public class ProductRepository implements IProductRepository {
         for (Product valueDelete:productList) {
             if (valueDelete.getId()== id){
                 productList.remove(valueDelete);
+                break;
             }
         }
     }
