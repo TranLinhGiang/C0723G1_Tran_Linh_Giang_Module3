@@ -8,13 +8,10 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanager/controller/UserServlet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanager/model/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanager/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanager/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanager/repository/impl/UserRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanager/service/IUserService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/usermanager/service/impl/UserService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/view/user/create.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/view/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/user/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698824981019</updated>
-      <workItem from="1698824982210" duration="12581000" />
+      <workItem from="1698824982210" duration="13181000" />
     </task>
     <servers />
   </component>
