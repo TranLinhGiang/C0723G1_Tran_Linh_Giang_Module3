@@ -22,7 +22,7 @@
       </tr>
       <tr>
         <td>Name: </td>
-        <td><input type="text" name="name" id="name" value="${product.getProductName()}"></td>
+        <td><input type="text" name="productName" id="name" value="${product.getProductName()}"></td>
       </tr>
       <tr>
         <td>Price: </td>
@@ -30,11 +30,11 @@
       </tr>
       <tr>
         <td>Description: </td>
-        <td><input type="text" name="description" id="description" value="${product.getDescribe()}"></td>
+        <td><input type="text" name="describe" id="describe" value="${product.getDescribe()}"></td>
       </tr>
       <tr>
         <td>Manufacturer: </td>
-        <td><input type="text" name="manufacturer" id="manufacturer" value="${product.getProducer()}"></td>
+        <td><input type="text" name="producer" id="producer" value="${product.getProducer()}"></td>
       </tr>
       <tr>
         <td></td>

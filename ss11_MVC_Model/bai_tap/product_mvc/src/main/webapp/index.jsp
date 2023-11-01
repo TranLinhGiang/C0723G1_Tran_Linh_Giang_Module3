@@ -5,6 +5,6 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<c:redirect url="product"></c:redirect>
+<a href="product">Danh sách sản phẩm</a>
 </body>
 </html>

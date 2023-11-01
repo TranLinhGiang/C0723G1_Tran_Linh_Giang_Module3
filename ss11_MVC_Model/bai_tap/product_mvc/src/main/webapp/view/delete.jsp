@@ -22,7 +22,7 @@
         </tr>
         <tr>
             <td>Name: </td>
-            <td><input type="text" name="ProductName" id="name" value="${product.getProductName}"></td>
+            <td><input type="text" name="ProductName" id="name" value="${product.getProductName()}"></td>
         </tr>
         <tr>
             <td>Price: </td>
