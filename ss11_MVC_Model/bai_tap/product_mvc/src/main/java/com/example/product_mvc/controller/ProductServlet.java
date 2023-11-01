@@ -42,7 +42,7 @@ public class ProductServlet extends HttpServlet {
     private void showList(HttpServletRequest req, HttpServletResponse resp) {
         List<Product> productList = productService.findAll();
         req.setAttribute("productList", productList);
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("view/product/list.jsp");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("view/list.jsp");
         try {
             requestDispatcher.forward(req, resp);
         } catch (ServletException e) {
@@ -74,7 +74,7 @@ public class ProductServlet extends HttpServlet {
     // phương thức lưu product thuộc get post;
     private void saveProduct(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         int id = Integer.parseInt(req.getParameter("id"));
-        String name = req.getParameter("name");
+        String name = req.getParameter("productName");
         double price = Double.parseDouble(req.getParameter("price"));
         String describe = req.getParameter("describe");
         String producer = req.getParameter("producer");
@@ -118,7 +118,7 @@ public class ProductServlet extends HttpServlet {
             requestDispatcher= req.getRequestDispatcher("error-404.jsp");
         }else {
             req.setAttribute("products",products);
-            requestDispatcher= req.getRequestDispatcher("view/product/searchByName");
+            requestDispatcher= req.getRequestDispatcher("view/searchByName");
         }
         try {
             requestDispatcher.forward(req,resp);
@@ -138,7 +138,7 @@ public class ProductServlet extends HttpServlet {
             requestDispatcher= req.getRequestDispatcher("error-404.jsp");
         }else {
             req.setAttribute("product",product);
-            requestDispatcher= req.getRequestDispatcher("view/product/detail.jsp");
+            requestDispatcher= req.getRequestDispatcher("view/detail.jsp");
         }
         try {
             requestDispatcher.forward(req,resp);
@@ -158,7 +158,7 @@ public class ProductServlet extends HttpServlet {
             requestDispatcher= req.getRequestDispatcher("error-404.jsp");
         }else {
             req.setAttribute("product",product);
-            requestDispatcher= req.getRequestDispatcher("view/product/delete.jsp");
+            requestDispatcher= req.getRequestDispatcher("view/delete.jsp");
         }
         try {
             requestDispatcher.forward(req,resp);
@@ -178,7 +178,7 @@ public class ProductServlet extends HttpServlet {
             requestDispatcher = req.getRequestDispatcher("error-404.jsp");
         } else {
             req.setAttribute("product", product);
-            requestDispatcher = req.getRequestDispatcher("view/product/edit.jsp");
+            requestDispatcher = req.getRequestDispatcher("view/edit.jsp");
         }
         try {
             requestDispatcher.forward(req, resp);
@@ -191,7 +191,7 @@ public class ProductServlet extends HttpServlet {
 
     // phương thức trả về trang add.jsp để tạo product;
     private void showAdd(HttpServletRequest req, HttpServletResponse resp) {
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("view/product/create.jsp");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("view/create.jsp");
         try {
             requestDispatcher.forward(req, resp);
         } catch (ServletException e) {
