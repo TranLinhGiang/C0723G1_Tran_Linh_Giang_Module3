@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3393f577-5994-4de3-be9e-73b6aaadcfc2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/user-manager/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-manager/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-manager/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-manager/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-manager/.idea/modules/user-manager.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user-manager/.idea/modules/user-manager.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-manager/.idea/modules/user-manager.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user-manager/.idea/modules/user-manager.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-manager/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/C0723G1_Tran_Linh_Giang_Module3/ss12_JDBC_CRUD/user-manager/src"
+    "last_opened_file_path": "F:/C0723G1_Tran_Linh_Giang_Module3/ss12_JDBC_CRUD/user-manager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -37,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698845208981</updated>
       <workItem from="1698845210708" duration="17000" />
+      <workItem from="1698895276238" duration="21000" />
     </task>
     <servers />
   </component>

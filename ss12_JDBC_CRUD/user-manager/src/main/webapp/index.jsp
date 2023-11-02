@@ -5,8 +5,9 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1>Quản lý danh sách User</h1>
+<h1><%= "Hello World!" %>
+</h1>
 <br/>
-<a href="/users">xem danh sách user</a>
+<a href="users">click me</a>
 </body>
 </html>
