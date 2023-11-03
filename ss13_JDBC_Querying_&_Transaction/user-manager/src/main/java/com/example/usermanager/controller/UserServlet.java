@@ -71,6 +71,7 @@ public class UserServlet extends HttpServlet {
 
                     testUseTran(request, response);
                     break;
+
                 default:
                     listUser(request, response);
                     break;
@@ -79,6 +80,7 @@ public class UserServlet extends HttpServlet {
             throw new ServletException(ex);
         }
     }
+
 
     private void testUseTran(HttpServletRequest request, HttpServletResponse response) {
         userService.insertUpdateUseTransaction();
@@ -158,7 +160,7 @@ public class UserServlet extends HttpServlet {
         User newUser = new User(name, email, country);
         //userDAO.insertUser(newUser);
         userService.addUserTransaction(newUser, permissions);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/create.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/user/create.jsp");
         dispatcher.forward(request, response);
     }
 

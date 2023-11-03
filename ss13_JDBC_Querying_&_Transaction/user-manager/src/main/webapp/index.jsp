@@ -8,6 +8,6 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="users">click me</a>
+<a href="/users">click me</a>
 </body>
 </html>
